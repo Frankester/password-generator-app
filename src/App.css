@@ -1,0 +1,125 @@
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-gray-500);
+}
+
+.form-options {
+  background-color: var(--color-gray-700);
+  padding: 1.5rem;
+}
+
+.length {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.length .length-size {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.length-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-gray-800);
+  border-radius: 0px;
+}
+
+.length-bar::-webkit-slider-thumb {
+  margin-top: -6px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.length-bar::-webkit-slider-thumb:hover {
+  background-color: var(--color-gray-800);
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+}
+
+.length-bar::-moz-range-thumb {
+  background-color: #eaeaea;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.length-bar::-webkit-slider-runnable-track {
+  --range: 20;
+  --ratio: calc((var(--val) - 0)/var(--range));
+  --sx: calc(.5*20px + var(--ratio)*(100% - 20px));
+  background: linear-gradient(var(--color-primary), var(--color-primary)) 0/var(--sx) 100% var(--color-gray-800) no-repeat;
+  border: none;
+  height: 4px;
+}
+
+.other-options-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin: 1.5rem 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.other-options-wrapper label {
+  cursor: pointer;
+}
+
+.other-options-wrapper label::before {
+  content: "\2713";
+  color: transparent;
+  text-align: center;
+  line-height: 15px;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #eaeaea;
+  margin-right: 16px;
+  background-color: var(--color-gray-700);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.other-options-wrapper label:hover::before {
+  border: 1px solid var(--color-primary);
+}
+
+.checkbox:checked+label::before {
+  content: "\2713";
+  /* código unicode de la marca de verificación */
+  background-color: var(--color-primary);
+  color: var(--color-gray-800);
+  border: 1px solid var(--color-primary);
+}
+
+
+.strength-wrapper {
+  padding: 1.3rem 1.5rem;
+  background-color: var(--color-gray-800);
+  color: var(--color-gray-600);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  align-items: center;
+}

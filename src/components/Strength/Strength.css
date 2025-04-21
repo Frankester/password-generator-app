@@ -1,0 +1,33 @@
+.strength {
+    color: #eaeaea;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.strength p {
+    margin: 0;
+}
+
+.strength-items-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.strength-item {
+    width: 8px;
+    height: 1.4rem;
+    border: 1px solid currentColor;
+}
+
+.strength-item.medium {
+    background-color: orange;
+}
+
+.strength-item.high {
+    background-color: yellowgreen;
+}
+
+.strength-item.low {
+    background-color: red;
+}
