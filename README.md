@@ -1,5 +1,5 @@
 # Password Generator App
-Generador de contraseñas seguras y personalizables, desarrollado con HTML, CSS y JavaScript. Este proyecto fue creado como parte del desafío de [Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh).
+Generador de contraseñas seguras y personalizables, desarrollado con React y Typescript. Este proyecto fue creado como parte del desafío de [Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh).
 
 ## 🚀 Demo
 Puedes ver la aplicación en funcionamiento haciendo [aca](https://password-generator-app-virid-two.vercel.app/)
